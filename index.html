@@ -4,38 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  =
 </head>
 
 <body>
+
   <form action="controlador" method="get">
     <div>
+      <label for="edad">Su edad</label>
       <input type="number" step="1.5" min="0" max="10" value="20" name="edad" disabled>
     </div>
-    <label for="nombre"><label>
-        <div>
+    <div>
+      <label for="nombre">Nombre<label>
           <input type=text name="nombre" required placeholder="ingrese su nombre" id="nombre" autofocus
             autocomplete="off">
-        </div>
-        <div>
-          <label for="color">seleccione un color</label>
-        </div>
-        <button type="submint">guardar><button>
-            <div>
-              <input type="color" id="color">
-            </div>
-            </div>
-            <div>
-              <label for="email">ingrese su correo</label>
-              <input type="email" name="email" required>
-            </div>
-            <label for="numero">ingrese su numero</label>
-            <div>
-              <input type="text" id="numero" required>
-            </div>
-            <button type="submit">Guardar</button>
+    </div>
+    <div>
+      <label for="color">seleccione un color</label>
+      <input type="color" id="color">
+    </div>
+    <div>
+      <label for="email">ingrese su correo</label>
+      <input type="email" name="email" required>
+    </div>
 
+    <div>
+      <label for="numero">ingrese su numero</label>
+      <input type="text" id="numero" required>
+    </div>
+
+    <div>
+      <label for="ciudad">seleccione ciudad</label>
+      <select name="ciudad" id="ciudad" disabled>
+        <option value="1">giron</option>
+        <option value="2" selected>bucaramanga</option>
+        <option value="3">florida</option>
+        <select>
+    </div>
+
+    <button type="submit">Guardar</button>
 </body>
 
 </html>
